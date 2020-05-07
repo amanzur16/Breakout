@@ -41,16 +41,19 @@ __meta__ = {
 [node name="Timer" type="Timer" parent="Starting"]
 wait_time = 10.0
 
-[node name="ColorRect" type="ColorRect" parent="."]
-margin_right = 1024.0
-margin_bottom = 635.0
+[node name="coronavirus-map-042720-homepage" type="Sprite" parent="Starting"]
+position = Vector2( 513.2, 337.724 )
+texture = ExtResource( 21 )
+
+[node name="ColorRect" type="ColorRect" parent="Starting/coronavirus-map-042720-homepage"]
+margin_left = -513.2
+margin_top = -346.085
+margin_right = 510.8
+margin_bottom = 295.915
+color = Color( 0, 0, 0, 0.294118 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
-
-[node name="coronavirus-map-042720-homepage" type="Sprite" parent="ColorRect"]
-position = Vector2( 513.2, 346.085 )
-texture = ExtResource( 21 )
 
 [node name="Camera" type="Camera2D" parent="."]
 anchor_mode = 0
@@ -133,4 +136,5 @@ position = Vector2( 762.095, 317.712 )
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource( 22 )
+autoplay = true
 [connection signal="timeout" from="Starting/Timer" to="Starting" method="_on_Timer_timeout"]

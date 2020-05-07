@@ -17,27 +17,27 @@ __meta__ = {
 }
 
 [node name="hqdefault" type="Sprite" parent="ColorRect"]
-position = Vector2( 278.857, 115.188 )
-scale = Vector2( 1.19116, 1 )
+position = Vector2( 284.886, 128 )
+scale = Vector2( 2.13953, 1.64062 )
 texture = ExtResource( 2 )
 
-[node name="Label" type="Label" parent="."]
-margin_top = 208.0
-margin_right = 1024.0
-margin_bottom = 344.0
-text = "You win!"
-align = 1
+[node name="Button" type="Button" parent="."]
+margin_left = 398.897
+margin_top = 1.35773
+margin_right = 625.897
+margin_bottom = 60.3577
+text = "Play Again?"
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Button" type="Button" parent="."]
-margin_left = 417.292
-margin_top = 221.289
-margin_right = 609.292
-margin_bottom = 269.289
-text = "Play again?"
-flat = true
+[node name="Label" type="Label" parent="Button"]
+margin_left = -405.144
+margin_top = 4.20187
+margin_right = 618.856
+margin_bottom = 140.202
+text = "You win!"
+align = 1
 __meta__ = {
 "_edit_use_anchors_": false
 }
